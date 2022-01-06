@@ -5,6 +5,45 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	
+<style>
+.cnsria-lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.cnsria-lightbox:target {
+  display: block;
+}
+
+.cnsria-lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+</style>
+	
 	<head>
 		<title>Prologue by HTML5 UP</title>
 		<meta charset="utf-8" />
@@ -89,7 +128,8 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://useal.github.io/prologue/images/acp.jpg" class="image fit"><img src="images/acp.jpg" alt="" /></a>
+										<a href="some-id" class="image fit"><img src="images/acp.jpg" alt="" /></a>
+										<a href="#_" class="cnsria-lightbox" id="some-id"><span style="background-image:url('images/acp.jpg')"></span></a>
 										<header>
 											<h3>Analyse en composantes principales</h3>
 										</header>
